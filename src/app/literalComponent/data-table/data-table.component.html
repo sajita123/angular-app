@@ -1,0 +1,17 @@
+<mat-table [dataSource]="dataSource" class="full-width">
+  <!-- Name Definition -->
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+    <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
+  </ng-container>
+
+  <!-- Position Definition -->
+  <ng-container matColumnDef="position">
+    <mat-header-cell *matHeaderCellDef> Position </mat-header-cell>
+    <mat-cell *matCellDef="let row"> {{row.position}} </mat-cell>
+  </ng-container>
+
+  <!-- Header and Row Declarations -->
+  <mat-header-row *matHeaderRowDef="['name', 'position']"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: ['name', 'position']"></mat-row>
+</mat-table>

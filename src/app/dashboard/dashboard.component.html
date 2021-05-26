@@ -1,0 +1,27 @@
+<div *ngFor="let data of templateData">
+  <div ngSwitch="{{data.type}}">
+    <ng-container *ngSwitchCase="'textBox'">
+        <app-text-box [item]="data"></app-text-box>
+    </ng-container>
+    <ng-container *ngSwitchCase="'textArea'">
+        <app-textarea [item]="data"></app-textarea>
+    </ng-container>
+    <ng-container *ngSwitchCase="'dropdown'">
+      <app-dropdown [item]="data"></app-dropdown>
+    </ng-container>
+    <ng-container *ngSwitchCase="'image'">
+      <app-picture [item]="data"></app-picture>
+    </ng-container>
+    <ng-container *ngSwitchCase="'radio'">
+        <app-radio [item]="data"></app-radio>
+    </ng-container>
+    <ng-container *ngSwitchCase="'checkbox'">
+      <app-checkbox [item]="data"></app-checkbox>
+    </ng-container>
+    <ng-container *ngSwitchCase="'table'">
+      <app-data-table [item]="data"></app-data-table>
+    </ng-container>
+    <ng-container *ngSwitchDefault>
+      <app-text-box [item]="data"></app-text-box>
+    </ng-container>
+</div>

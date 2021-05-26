@@ -1,0 +1,8 @@
+<mat-form-field appearance="fill" class="full-width">
+  <mat-label>{{item.title}}</mat-label>
+  <mat-select [(ngModel)]=item.selectedValue>
+    <mat-option *ngFor="let cnt of item.value" [value]=cnt.value>
+      {{cnt.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

@@ -1,0 +1,88 @@
+[
+  {
+    "id": 1,
+    "title": "Label",
+    "views": 98,
+    "type": "textBox",
+    "value": "Test1"
+  },
+  {
+    "id": 2,
+    "title": "Name",
+    "views": 96,
+     "type": "textBox",
+     "value": "Test2"
+  },
+  {
+    "id": 3,
+    "title": "Comment",
+    "views": 96,
+     "type": "textArea",
+     "value": "This is for test purpose, kindly check properly!!!!!!"
+  },
+  {
+    "id": 4,
+    "title": "Project",
+    "views": 96,
+     "type": "dropdown",
+     "selectedValue":"germany",
+     "value": [
+      {"value": "germany", "viewValue": "germany"},
+      {"value": "austria", "viewValue": "austria"},
+      {"value": "romania", "viewValue": "romania"}
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Country",
+    "views": 95,
+     "type": "dropdown",
+     "selectedValue":"austria",
+     "value": [
+      {"value": "germany", "viewValue": "germany"},
+      {"value": "austria", "viewValue": "austria"},
+      {"value": "romania", "viewValue": "romania"}
+    ]
+  },
+   {
+    "id": 6,
+    "title": "Template",
+    "views": 96,
+     "type": "textArea",
+     "value": "Kindly Check the Template for your reference"
+  },
+  {
+    "id": 7,
+    "title": "Picture",
+    "views": 96,
+     "type": "image",
+     "value": "https://picsum.photos/200/300/?random"
+
+  },
+  {
+    "id": 8,
+    "title": "Brand",
+    "views": 95,
+    "type": "checkbox",
+    "value": [
+      {"name": "Primary", "completed": false, "color": "primary"},
+      {"name": "Accent", "completed": false, "color": "accent"},
+      {"name": "Warn", "completed": false, "color": "warn"}
+    ]
+  },
+  {
+    "id": 9,
+    "title": "In Production",
+    "views": 95,
+    "type": "radio",
+    "value": ["yes","no"]
+  },
+  {
+    "id": 10,
+    "title": "Table Format",
+    "views": 95,
+    "type": "table",
+    "value": [{"name":"Germany","position":"east"},{"name":"Austria","position":"west"},{"name":"Romania","position":"north"}]
+  }
+]
+
